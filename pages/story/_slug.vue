@@ -92,7 +92,7 @@ export default {
     },
     head(){
         return{
-            title: this.planet.title,
+            title: "Nice",
             meta: [
                 { hid: 'og:type', property: 'og:type', content: 'website' },
                 {
