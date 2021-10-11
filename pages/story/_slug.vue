@@ -1,6 +1,7 @@
 <template>
   <LoadingModule v-if="initialLoading" />
   <section v-else class="generic-wrap pad-search">
+      <h1>BOOM</h1>
     <ReportStory v-if="reporting" :story="story" @closeModal="reporting = false" />
     <div class="container">
       <div class="video-wrap">
@@ -88,21 +89,6 @@ export default {
         const data = await res.json();
         const story = data;
         return {story, initialLoading: false};
-    },
-    head: {
-        title: 'Video page',
-        meta: [
-            {
-                hid: "og:title",
-                property: "og:title",
-                content: "My Amazing Blog on The Joy of Painting",
-            },
-            {
-                hid: 'og:description',
-                name: 'og:description',
-                content: 'Home page description'
-            }
-        ],
     },
     data() {
         return {
