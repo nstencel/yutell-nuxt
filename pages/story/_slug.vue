@@ -89,38 +89,53 @@ export default {
         const story = data;
         return {story, initialLoading: false};
     },
-  data() {
-    return {
-      initialLoading: false,
-      id: 0,
-      story: {},
-      reporting: false,
-      pulledStories: [],
-      tempStories:[],
-      suggestedStories: []
+    head: {
+        title: 'Video page',
+        meta: [
+            {
+                hid: "og:title",
+                property: "og:title",
+                content: "My Amazing Blog on The Joy of Painting",
+            },
+            {
+                hid: 'og:description',
+                name: 'og:description',
+                content: 'Home page description'
+            }
+        ],
+    },
+    data() {
+        return {
+        initialLoading: false,
+        id: 0,
+        story: {},
+        reporting: false,
+        pulledStories: [],
+        tempStories:[],
+        suggestedStories: []
 
-    };
-  },
-  mounted() {
-    // Get the story
-    console.log("change full path");
-    //this.getStory();
-  },
-  computed: mapState({
-    user: state => state.user,
-    sidebarOpen: state => state.sidebarOpen
-  }),
-  methods: {
-    storyWatched(story_id) {
-      let watched = false;
-      if (Object.entries(this.user).length > 0) {
-        this.user.history.forEach(story => {
-          if (story_id == story.story_id) {
-            watched = true;
-          }
-        });
-      }
-      return watched;
+        };
+    },
+    mounted() {
+        // Get the story
+        console.log("change full path");
+        //this.getStory();
+    },
+    computed: mapState({
+        user: state => state.user,
+        sidebarOpen: state => state.sidebarOpen
+    }),
+    methods: {
+        storyWatched(story_id) {
+            let watched = false;
+            if (Object.entries(this.user).length > 0) {
+                this.user.history.forEach(story => {
+                if (story_id == story.story_id) {
+                    watched = true;
+                }
+                });
+        }
+        return watched;
     },
     showMoreSuggested() {
       this.getStory();
