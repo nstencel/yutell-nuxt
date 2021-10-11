@@ -1,0 +1,181 @@
+.admin-header {
+  background-color: lighten($gray, 44%);
+  overflow: auto;
+  .admin-logo {
+    margin: 15px 0px;
+    display: inline-block;
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+  .admin-nav {
+    float: right;
+    .menu {
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        float: left;
+        list-style: none;
+        a {
+          background-color: transparent;
+          color: $brand-primary;
+          font-weight: $bold;
+          display: block;
+          padding: 21px 25px;
+          border-right: 1px solid lighten($gray, 38%);
+          transition: all 0.5s ease;
+          &:hover,
+          &.router-link-exact-active {
+            background-color: $brand-primary;
+            color: $white;
+          }
+        }
+        &:last-child {
+          a {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.admin-content-section {
+  padding: 50px;
+  h1 {
+    color: $brand-primary;
+    font-size: 30px;
+    font-weight: $bold;
+    border-bottom: 1px solid lighten($gray, 40%);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.content-loader-individual {
+  background-color: lighten($gray, 45%);
+  position: relative;
+  height: 100px;
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.table-btn {
+  padding: 5px 10px;
+  margin-left: 15px;
+  i {
+    font-size: 15px;
+  }
+}
+
+.dataTables_wrapper {
+  .form-control {
+    font-size: 18px;
+    padding: 5px 40px 5px 5px;
+  }
+}
+.page-item.active .page-link {
+  background-color: $gray;
+  border-color: $gray;
+}
+
+.table-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid $white;
+}
+
+.table-story {
+  width: 100px;
+  height: 60px;
+}
+
+.container {
+  position: relative;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  background-color: $brand-danger;
+  border-radius: 100px;
+  display: inline-block;
+  &.green {
+    background-color: $brand-success;
+  }
+}
+
+.money-tabs {
+  border-bottom: 1px solid #ebebeb;
+  margin: 0 0 40px 0;
+  padding: 0;
+  overflow: auto;
+  li {
+    display: block;
+    float: left;
+    list-style: none;
+    a {
+      display: block;
+      background: #ebebeb;
+      color: $body-font-color;
+      width: 200px;
+      padding: 15px;
+      text-align: center;
+      font-weight: $bold;
+      &:hover {
+        background: lighten($gray, 45%);
+      }
+      &.router-link-exact-active {
+        background: $brand-primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+.user-card {
+  background: lighten($gray, 45%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  text-align: center;
+  .uc-img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+  }
+  .uc-dets {
+    .cap {
+      text-transform: capitalize;
+    }
+  }
+}
+
+fieldset {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lighten($gray, 40%);
+  display: block;
+  legend {
+    color: $brand-primary;
+    font-weight: $bold;
+    margin-bottom: 20px;
+  }
+}
+
+.con-box {
+  border: 1px solid #ebebeb;
+  background: #fafafa;
+  padding: 40px;
+}

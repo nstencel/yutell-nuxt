@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---Logged-Out" transform="translate(-57.000000, -255.000000)" fill="#2C9DC5">
+            <g id="iconmonstr-email-16" transform="translate(57.000000, 255.000000)">
+                <path d="M24,0 L24,18 L0,18 L0,0 L24,0 Z M17,13 C19.208,13 21,11.208 21,9 C21,6.792 19.208,5 17,5 C14.792,5 13,6.792 13,9 C13,9.728 13.195,10.412 13.536,11 L10.464,11 C10.805,10.412 11,9.728 11,9 C11,6.792 9.208,5 7,5 C4.792,5 3,6.792 3,9 C3,11.208 4.792,13 7,13 L17,13 Z M7,7 C8.104,7 9,7.896 9,9 C9,10.104 8.104,11 7,11 C5.896,11 5,10.104 5,9 C5,7.896 5.896,7 7,7 Z M17,7 C18.104,7 19,7.896 19,9 C19,10.104 18.104,11 17,11 C15.896,11 15,10.104 15,9 C15,7.896 15.896,7 17,7 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

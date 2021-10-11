@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Single-Video-Page" transform="translate(-126.000000, -883.000000)" fill="#2C9DC5" fill-rule="nonzero">
+            <g id="iconmonstr-user-31" transform="translate(126.000000, 883.000000)">
+                <path d="M10.8377143,15.08 C13.2942857,14.418 14.7282857,13.839 13.62,11.398 C10.2497143,3.971 12.7268571,-1.77635684e-15 16.2865714,-1.77635684e-15 C19.9165714,-1.77635684e-15 22.3328571,4.124 18.9522857,11.398 C17.8105714,13.853 19.3268571,14.432 21.7311429,15.08 C23.8594286,15.654 24,16.867 24,18.969 L24,20 L8.57142857,20 C8.57142857,17.255 8.38285714,15.742 10.8377143,15.08 Z M0,20 L6.69342857,20 C6.66342857,11.823 9.63857143,14.687 9.63857143,8.873 C9.63857143,6.362 8.23371429,5 6.426,5 C3.756,5 1.89857143,7.979 4.42628571,13.549 C5.25685714,15.379 3.54257143,15.814 1.69971429,16.31 C0.103714286,16.74 0,17.65 0,19.227 L0,20 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,153 @@
+
+.custom-modal {
+  position: relative;
+  &.search {
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    z-index: 5000;
+    margin-top: 50px;
+    .modal-content {
+      padding: 10px 0px;
+      background: $white;
+    }
+  }
+  .cm-content {
+    width: 100%;
+    max-width: 1080px;
+    background-color: $white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1500;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .cm-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black, 0.9);
+    z-index: 1000;
+  }
+  &.donate {
+    .cm-content {
+      max-width: 800px;
+      .cmd-header {
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 200px;
+        .ic-overlay {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: $black;
+          opacity: 0.6;
+          z-index: 10;
+        }
+        .content {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: $white;
+          font-size: 20px;
+          max-width: 850px;
+          text-align: center;
+          z-index: 50;
+        }
+        img {
+          border-radius: 50%;
+          width: 160px;
+          height: 160px;
+          border: 3px solid $white;
+          position: absolute;
+          left: 50%;
+          /*bottom: -80px;*/
+          bottom: 0px;
+          transform: translateX(-50%);
+        }
+      }
+      .cmd-body {
+        /*padding: 140px 50px 50px 50px;*/
+        padding: 75px 50px 50px 50px;
+        max-height:600px;
+        overflow-y: auto;
+        h1 {
+          font-size: 35px;
+        }
+        .input-group {
+          &.donate {
+            .input-group-prepend {
+              span {
+                background: lighten($gray, 20%);
+                color: $white;
+                padding: 5px 20px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.donation-opt {
+  margin: 0 0 20px 0;
+  padding: 0;
+  overflow: auto;
+  li {
+    display: block;
+    float: left;
+    list-style: none;
+    button {
+      background: $brand-success;
+      color: $white;
+      font-size: 20px;
+      padding: 8px 15px;
+      border: none;
+      margin-right: 15px;
+      border-radius: 4px;
+      &:hover {
+        background: lighten($brand-success, 15%);
+      }
+      &.active {
+        background: $brand-primary;
+      }
+    }
+  }
+}
+
+.ElementsApp,
+.ElementsApp .InputElement {
+  color: $gray !important;
+  &::placeholder {
+    color: $gray !important;
+  }
+}
+
+.modal-content {
+  z-index: 5000;
+}
+
+@media (min-width: 992px) {
+  .custom-modal {
+    position: relative;
+    &.search {
+      width: 100%;
+      max-width: 600px;
+      margin: 40px 0px 0px 0px;
+    }
+  }
+}

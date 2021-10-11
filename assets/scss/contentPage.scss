@@ -1,0 +1,38 @@
+.content-page-wrap {
+  .cp-header {
+    height: 200px;
+    background-color: $brand-primary;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: $white;
+      font-size: 30px;
+    }
+  }
+  .wp-content {
+    padding: 40px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.app-header.cp {
+  margin: 0;
+  padding: 20px 20px 10px 20px;
+  background: $brand-primary;
+}
+
+@media (min-width: 992px) {
+  .content-page-wrap {
+    .wp-content {
+      padding: 100px;
+    }
+  }
+}

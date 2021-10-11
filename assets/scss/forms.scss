@@ -1,0 +1,89 @@
+.gradient-fixed {
+  .form-control {
+    background: rgba(#303638, 0.5);
+    border: none;
+    color: $white;
+    height: auto;
+    padding: 18px;
+    font-weight: $regular;
+    font-size: 20px;
+    &::placeholder {
+      color: $white;
+      opacity: 0.7;
+    }
+  }
+  button.submit-btn {
+    padding: 18px;
+    font-size: 20px;
+  }
+}
+
+span.error {
+  display: block;
+  color: $brand-danger;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.form-group {
+  label {
+    font-size: 20px;
+    color: $black;
+    font-weight: $bold;
+    span {
+      color: $brand-danger;
+    }
+  }
+}
+
+.form-control {
+  border: 1px solid #b5b5b5;
+  height: auto;
+  color: $body-font-color;
+  padding: 18px;
+  font-weight: $regular;
+  font-size: 20px;
+  border-radius: 3px;
+  appearance: none;
+  background: $white;
+  &.mobile-search {
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+select.form-control {
+  background: url("~@/assets/img/select-arrow.png") no-repeat right 20px center
+    $white;
+}
+
+.red {
+  color: $brand-danger !important;
+}
+
+.yellow {
+  color: rgb(232, 167, 55);
+}
+
+.text-highlighted {
+  font-weight: $bold;
+}
+
+.pretty input:checked ~ .state.p-success .icon,
+.pretty input:checked ~ .state.p-success .svg,
+.pretty.p-toggle .state.p-success .icon,
+.pretty.p-toggle .state.p-success .svg {
+  margin-left: -12px;
+  font-size: 16px;
+  margin-right: 0;
+  margin-top: 8px;
+}
+
+@media (min-width: 780px) {
+  .form-control {
+    &.mobile-search {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+.sidebar {
+  width: $sidebar-width;
+  position: fixed;
+  left: -$sidebar-width;
+  top: 0;
+  height: 100%;
+  background-color: $white;
+  transition: all 0.5s ease;
+  z-index: 1000;
+  &.open {
+    left: 0px;
+  }
+  .close-sb {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background: none;
+    border: none;
+    color: $gray;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    i {
+      font-size: 20px !important;
+    }
+    &:hover {
+      color: $brand-primary;
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .main-logo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    img {
+      display: inline-block;
+      width: 180px;
+      height: auto;
+    }
+  }
+  .sb-wrap {
+    padding: 0px 10px 0px 40px;
+    .main-nav {
+      margin: 0 0 50px 0;
+      padding: 0;
+      &.standard {
+        margin-left: 0px;
+        li {
+          a {
+            display: inline-block;
+            width: auto;
+            &.donate {
+              i {
+                margin-right: 6px;
+              }
+            }
+            i {
+              position: relative;
+              top: 5px;
+            }
+          }
+        }
+      }
+      li {
+        display: block;
+        list-style: none;
+        a {
+          display: block;
+          color: $gray;
+          font-size: 20px;
+          font-weight: $regular;
+          margin-bottom: 15px;
+          position: relative;
+          img {
+            margin-right: 10px;
+            position: relative;
+            z-index: 1;
+            top: -3px;
+            &.rater {
+              margin-right: 5px;
+            }
+            &.hover-img {
+              position: absolute;
+              z-index: 2;
+              left: 0;
+              opacity: 0;
+              transition: all 0.25s ease;
+              top: 3px;
+              &.cats {
+                top: 4px;
+              }
+              &.subs {
+                top: 5px;
+              }
+              &.history {
+                top: 2px;
+              }
+              &.watchlist {
+                top: 2px;
+              }
+              &.money {
+                top: 2px;
+              }
+              &.rater {
+                top: 2px;
+              }
+              &.mycontests {
+                top: 3px;
+              }
+            }
+          }
+          &:hover,
+          &.router-link-exact-active {
+            color: $brand-primary;
+            img {
+              &.hover-img {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sb-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: lighten($gray, 40%);
+    z-index: 200;
+    .sbf-img {
+      align-self: center;
+      text-align: center;
+      background-color: lighten($gray, 45%);
+      width: 100px;
+      padding: 20px 0px;
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .sbf-logout {
+      align-self: center;
+      flex-grow: 1;
+      padding: 20px;
+      .btn-default {
+        background-color: lighten($gray, 25%);
+        &:hover {
+          background-color: lighten($gray, 10%);
+        }
+      }
+    }
+  }
+}
+
+.menu-scroller {
+  max-height: calc(100vh - 226px);
+  overflow-y: scroll;
+  width:220px;
+}

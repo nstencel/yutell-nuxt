@@ -1,0 +1,392 @@
+.my-account {
+  .ma-header-img {
+    height: 263px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    .ma-header-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      background: rgba($black, 0.6);
+    }
+    .edit-header-btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #d8d8d8;
+      width: 80px;
+      height: 80px;
+      border-radius: 150px;
+      transition: all 0.25s ease;
+      border: none;
+      z-index: 200;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        background: lighten($brand-primary, 40%);
+      }
+    }
+  }
+  .channel-info {
+    margin-top: -60px;
+    position: relative;
+    z-index: 250;
+    .channel-info-wrap {
+      margin-bottom: 80px;
+      text-align: center;
+      .ci-picture {
+        background-color: #d8d8d8;
+        width: 200px;
+        height: 200px;
+        border: 3px solid $white;
+        position: relative;
+        display: inline-block;
+        transition: all 0.25s ease;
+        background-size: cover;
+        background-position: center center;
+        .upload-profile-picture-btn {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background: #d8d8d8;
+          border: none;
+          opacity: 1;
+          transition: all 0.25s ease;
+          border-radius: 100px;
+          width: 80px;
+          height: 80px;
+          &.hidden {
+            opacity: 0;
+          }
+        }
+        &:hover {
+          background-color: lighten($brand-primary, 40%);
+          .upload-profile-picture-btn {
+            opacity: 1;
+          }
+        }
+      }
+      .ci-info {
+        font-size: 20px;
+        font-weight: $bold;
+        padding-top: 20px;
+        .upper {
+          margin-bottom: 0px;
+          .edit-profile-btn {
+          }
+          .edit-profile-btn-mobile {
+            display: none;
+          }
+        }
+        .lower {
+          text-align: center;
+          .account-social {
+            margin: 20px 0 0 0;
+            padding: 0;
+            display: inline-block;
+            li {
+              display: block;
+              float: left;
+              a {
+                display: block;
+                margin-right: 20px;
+                color: $body-font-color;
+                transition: all 0.25s ease;
+              }
+              &:last-child {
+                a {
+                  margin-right: 0;
+                }
+              }
+              &:hover {
+                a {
+                  color: $brand-primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .channel-intro {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.channel-tabs {
+  .ct-nav {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0;
+    li {
+      display: block;
+      list-style: none;
+      a {
+        display: block;
+        background: lighten($brand-secondary, 40%);
+        color: $black;
+        font-size: 18px;
+        font-weight: $bold;
+        text-transform: capitalize;
+        padding: 10px 15px;
+        border-bottom: 1px solid lighten($brand-secondary, 20%);
+        &:hover,
+        &.active,
+        &.router-link-exact-active {
+          background: $brand-primary;
+          color: $white;
+        }
+      }
+    }
+  }
+  .ct-tab {
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+}
+
+.hide {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.dash-wrap {
+  background-color: lighten($brand-secondary, 40%);
+  border: 2px dashed lighten($brand-secondary, 30%);
+  width: 100%;
+  height: 250px;
+  position: relative;
+  button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cover-thumb {
+  width: 400px;
+  height: auto;
+}
+
+.keyword-list {
+  margin: 20px 0px 40px 0px;
+  padding: 0;
+  overflow: auto;
+  li {
+    float: left;
+    display: block;
+    list-style: none;
+    a {
+      display: block;
+      margin-right: 10px;
+      //background-color: $brand-primary;
+      background-color:red;
+      color: $white;
+      font-weight: $regular;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      i {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.spacer {
+  height: 500px;
+}
+
+.card-wrap {
+  padding: 20px;
+  border: 1px solid lighten($gray, 25%);
+}
+
+.upload-preview {
+  width: 100%;
+  max-width: 480px;
+  .up-img-wrap {
+    position: relative;
+    margin-bottom: 10px;
+    .up-img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+    .upload-processing {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      background: rgba($brand-primary, 0.8);
+      div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        font-size: 17px;
+        font-weight: $bold;
+        svg {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .up-title {
+    font-size: 16px;
+    font-weight: $bold;
+    color: $black;
+    text-transform: capitalize;
+  }
+  .up-desc {
+    font-size: 15px;
+    color: lighten($gray, 25%);
+  }
+}
+
+.rec-code {
+  position: relative;
+  left: -40px;
+  top: -40px;
+  width: calc(100% + 80px);
+  height: 480px;
+  margin-bottom: -80px;
+  z-index: 5;
+  background-color: #32325d;
+  text-align: center;
+  color: white;
+  .rc-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .rc-logo {
+      img {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.money-stat {
+  height: 100%;
+  background-color: $brand-success;
+  color: $white;
+  height: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  span {
+    display: block;
+    font-size: 70px;
+    font-weight: $bold;
+  }
+  &.s-blue {
+    background-color: $brand-primary;
+    color: $white;
+  }
+}
+
+.rate-videos-wrap {
+  padding: 40px;
+}
+
+#upload-block-container {
+  display:flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .my-account {
+    .channel-info {
+      .channel-info-wrap {
+        .ci-picture {
+          float: left;
+          margin-right: 30px;
+        }
+        .ci-info {
+          .upper {
+            text-align: left;
+            color: $white;
+            .left {
+              float: left;
+            }
+            .edit-profile-btn-mobile {
+              display: block !important;
+              float: right;
+              position: relative;
+              top: -5px;
+              &.hide {
+                display: none !important;
+              }
+            }
+            .edit-profile-btn {
+              display: none;
+            }
+          }
+          .lower {
+            text-align: left;
+            clear: right;
+            padding-top: 20px;
+            .left {
+              float: left;
+            }
+            .right {
+              float: right;
+              .account-social {
+                margin-top: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .channel-tabs {
+    .ct-nav {
+      overflow: auto;
+      border-bottom: 1px solid lighten($brand-secondary, 20%);
+      li {
+        display: block;
+        list-style: none;
+        float: left;
+        a {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .rate-videos-wrap {
+    padding: 100px;
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+}

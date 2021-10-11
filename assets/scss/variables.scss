@@ -1,0 +1,32 @@
+// Font Imports
+//@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i");
+//@import url("https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css");
+
+// Brand Colors
+$brand-primary: #2c9dc5;
+$brand-secondary: #7d7878;
+$brand-info: #5b8bc0;
+$brand-success: #3eba9f;
+$brand-warning: #facf89;
+$brand-danger: #da6f6f;
+$white: #ffffff;
+$black: #333232;
+$gray: #656565;
+$green: #00FF00;
+$red: #ff0000;
+
+// Body
+$body-bg: #f5f5f5;
+$body-font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+$body-font-size: 16px;
+$body-font-color: $gray;
+
+// Fonts
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Vars
+$sidebar-width: 300px;
+
+$brand-gradient: linear-gradient(135deg, #2c9dc5 0%, #213b44 100%);

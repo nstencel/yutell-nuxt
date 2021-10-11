@@ -1,0 +1,74 @@
+.ind-playlist {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+  .ip-img {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+    position: relative;
+    div {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 8px;
+      color: $white;
+      background: rgba($black, 0.8);
+      width: 100%;
+    }
+  }
+  .edit-btn {
+    padding: 4px 8px 0px 8px;
+    background: $brand-primary;
+    color: $white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 50;
+    border: none;
+    i {
+      font-size: 17px;
+    }
+  }
+  .ip-title {
+    font-weight: $bold;
+    color: $black;
+  }
+}
+
+.delete-link {
+  color: $brand-danger;
+  font-weight: $bold;
+  margin-top: 20px;
+  font-size: 14px;
+  display: inline-block;
+  i {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ind-playlist {
+    .ip-img {
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .ind-playlist {
+    .ip-img {
+      height: 250px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .ind-playlist {
+    .ip-img {
+      height: 200px;
+    }
+  }
+}

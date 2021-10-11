@@ -1,0 +1,59 @@
+.btn {
+  i {
+    font-size: 13px;
+  }
+  &.btn-primary {
+    background: $brand-primary !important;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    &:hover {
+      background: lighten(saturate($brand-primary, 10%), 10%);
+      color: $white;
+    }
+  }
+  &.btn-success {
+    background: $brand-success;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    &:hover {
+      background: lighten(saturate($brand-success, 10%), 10%);
+      color: $white;
+    }
+  }
+  &.btn-default {
+    background: lighten($brand-secondary, 20%);
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    &:hover {
+      background: lighten($brand-secondary, 35%);
+      color: $white;
+    }
+  }
+  &.btn-lg {
+    font-size: 20px;
+    font-weight: $regular;
+    padding: 10px 20px;
+    i {
+      font-size: 18px;
+      position: relative;
+      top: 1px;
+      margin-right: 6px;
+    }
+  }
+}
+
+.swal2-styled.swal2-confirm {
+  background: $brand-primary !important;
+  border: none !important;
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
