@@ -90,6 +90,24 @@ export default {
         const story = data;
         return {story, initialLoading: false};
     },
+    head(){
+        return{
+            title: this.planet.title,
+            meta: [
+                { hid: 'og:type', property: 'og:type', content: 'website' },
+                {
+                hid: 'og:title',
+                property: 'og:title',
+                content: 'Nuxt Mission',
+                },
+                {
+                hid: 'og:description',
+                property: 'og:description',
+                content: 'A mission to explore the Jamstack using Nuxt.',
+                }
+            ]
+        }
+    },
     data() {
         return {
         initialLoading: false,
